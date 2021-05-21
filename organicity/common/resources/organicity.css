@@ -1,0 +1,517 @@
+@charset "UTF-8";
+
+/*---------------------------------
+ * Fonts, as used by organicity.eu.
+ */
+
+@font-face {
+	font-family:CooperHewitt-Book;
+	src:url(CooperHewitt-Book.eot);
+	src:url(CooperHewitt-Book.eot?#iefix) format("embedded-opentype"),
+    url(CooperHewitt-Book.woff) format("woff"),
+    /* url(CooperHewitt-Book.ttf) format("truetype"), */
+    url(CooperHewitt-Book.svg#svgFontName) format("svg");
+}
+
+@font-face {
+	font-family:CooperHewitt-Medium;
+	src:url(CooperHewitt-Medium.eot);
+	src:url(CooperHewitt-Medium.eot?#iefix) format("embedded-opentype"),
+    url(CooperHewitt-Medium.woff) format("woff"),
+    /* url(CooperHewitt-Medium.ttf) format("truetype"), */
+    url(CooperHewitt-Medium.svg#svgFontName) format("svg");
+}
+
+@font-face {
+	font-family:socialmedia;
+	src:url(socialmedia.eot);
+	src:url(socialmedia.eot#iefix) format("embedded-opentype"),
+    url(socialmedia.woff) format("woff"),
+    url(socialmedia.ttf) format("truetype"),
+    url(socialmedia.svg#socialmedia) format("svg");
+	font-weight:400;
+	font-style:normal;
+}
+
+/*---------------------------------
+ * Resets, in addition to normalize.css.
+ */
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/*---------------------------------
+ * Pure Grid fix.
+ */
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: CooperHewitt-Book,Verdana,Arial,sans-serif;
+}
+
+
+/*---------------------------------
+ * Header
+ */
+
+header {
+  background-color: #EF4070;
+  display: block;
+  color: white;
+  padding: 0.94rem 5.6rem 0.4rem;
+}
+
+header a img {
+  width: 7.875rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/*---------------------------------
+ * Footer
+ */
+
+body {
+  background-color: #3f3f3f;
+}
+
+footer {
+  background-color: #3f3f3f;
+  color: #b4b5b8;
+  font-size: 1rem;
+  padding-bottom: 4rem;
+}
+
+footer > div {
+  margin: 0 auto;
+  max-width: 62rem;
+}
+
+footer div.pure-g > div {
+  padding: 0 0.6rem;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+footer .eulogo {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer .eulogo img {
+  background-color: #f8f8fe;
+  padding: 1rem;
+  max-height: 8rem;
+}
+
+footer h3 {
+  border-bottom: 1px solid #b4b5b8;
+}
+
+footer div.socialmeedia {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+footer div.socialmeedia a {
+  font-size: 2.6rem;
+}
+
+footer div.socialmeedia a:hover {
+  color: #bd3358;
+}
+
+footer div.socialmeedia a {
+  margin: 0 0.4rem;
+}
+
+footer a {
+  color: #b4b5b8;
+}
+
+footer a.pink {
+  color: #bd3358;
+}
+
+footer p {
+  margin: 0.2rem 0.6rem 0.3rem;
+}
+
+footer a:hover,
+footer a.pink:hover {
+  color: #9d9d9d;
+}
+
+footer div.copy {
+  text-align: center;
+  margin: 1.2rem auto 0.8rem;
+}
+
+/*---------------------------------
+ * Social Meedia Icons
+ */
+
+[class*=" icon-"]:before,
+[class^=icon-]:before {
+  font-family: socialmedia;
+  font-style: normal;
+  font-weight: 400;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.icon-facebook-squared:before {
+  content: '\e800'
+}
+.icon-gplus:before {
+  content: '\e801'
+}
+.icon-twitter:before {
+  content: '\e802'
+}
+.icon-instagramm:before {
+  content: '\e803'
+}
+.icon-youtube-play:before {
+  content: '\e804'
+}
+.icon-slideshare:before {
+  content: '\e805'
+}
+.icon-linkedin-squared:before {
+  content: '\e806'
+}
+
+/*---------------------------------
+ * Body
+ */
+
+main {
+  background-color: #F3F4F8;
+  padding-bottom: 8rem;
+  padding-top: 2.6rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #EF4070;
+  margin: 1.2rem 0 2.4rem;
+  display: block;
+  text-align: center;
+  font-weight: normal;
+}
+
+main > * {
+  max-width: 62rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+main div.box {
+  display: block;
+  margin: 0.6rem;
+  background-color: white;
+  padding: 1.2rem;
+}
+
+h2 {
+  color: #5D5D5D;
+  margin: 0.6rem 0 1rem;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+
+main p,
+main label {
+  font-size: 1.3rem;
+  color: #5D5D5D;
+}
+
+main p {
+  font-size: 1.3rem;
+  color: #5D5D5D;
+  margin: 0.6rem 0 0.4rem;
+}
+
+a {
+  color: #EF4070;
+}
+
+a:hover,
+a.pink:hover {
+  color: #5d5d5d;
+}
+
+
+/*---------------------------------
+ * Message boxes.
+ */
+
+.message {
+  max-width: 62rem;
+
+  margin: 0.6rem auto 0;
+
+  padding: 0.6rem;
+}
+
+.message > div {
+  margin-bottom: 20px;
+
+  padding: 0.4rem 0.8rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+
+  clear: left;
+}
+
+.message .feedback-error {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+
+.message .feedback-success {
+	background-color:#dff0d8;
+	border-color:#d6e9c6;
+	color:#3c763d;
+}
+
+.message .feedback-warning {
+	background-color:#f7f2d5;
+	border-color:#e8cb90;
+	color:#8a6d3b;
+}
+
+
+/*---------------------------------
+ * Login
+ */
+
+
+#kc-locale {
+  height: 4.5rem;
+}
+
+
+.kc-dropdown {
+  position: relative;
+  z-index: 9999;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.kc-dropdown > a {
+  position: absolute;
+  right: 0px;
+  display:block;
+  padding: 1.1rem 0.85rem;
+  border: 1px solid #9C9C9C;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: default;
+  outline: none;
+  height: 4.5rem;
+  background-color: white;
+  color: #8e9090;
+  text-decoration: none;
+}
+
+.kc-dropdown > a::after {
+  content: "\25be";
+  margin-left: 0.8rem;
+}
+
+.kc-dropdown ul {
+  position: absolute;
+  right: 0px;
+  top: 2.25rem;
+  z-index: 2001;
+  list-style:none;
+  display:none;
+
+  background-color: white;
+  border: 1px solid #9C9C9C;
+  border-radius: 4px;
+
+  padding: 0;
+
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background-clip: padding-box;
+  min-width: 10rem;
+}
+
+.kc-dropdown ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.kc-dropdown ul li a {
+  padding: 0.1rem 1rem;
+  color: #333;
+  text-decoration: none;
+  display:block;
+}
+
+.kc-dropdown ul li a:hover {
+  color: white;
+  background-color: #EF4070;
+}
+
+.kc-dropdown:hover ul{
+  display:block;
+}
+
+.oc-input {
+  margin-top: 0.6rem;
+  margin-bottom: 1.0rem;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  border: 1px solid #9C9C9C;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: #FFF;
+  color: #111;
+  font-size: 1.3rem;
+  padding: 1.1rem 0.85rem;
+  display: block;
+  width: 100%;
+}
+
+.oc-input.error {
+  background-color: #f2dede;
+}
+
+form.longer input.oc-input {
+  padding: 0.65rem 0.85rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+form.longer div.pure-g > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  padding-right: 0.9rem;
+}
+
+form.buttons div.pure-g > div:last-child,
+form.longer div.pure-g > div:last-child {
+  padding-right: 0rem;
+}
+
+form.buttons div.pure-g > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  padding-right: 1.8rem;
+}
+
+
+.oc-button {
+  background-color: #EF4070;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-family: CooperHewitt-Medium,Verdana,Arial,sans-serif;
+  font-size: 1.3rem;
+  padding: 0.8rem 2.5rem 0.5rem;
+  border: 0;
+  width: 100%;
+  max-width: 31rem;
+}
+
+fieldset {
+  display: inline-block;
+}
+
+
+.oc-button:hover {
+    background-color: #191115;
+}
+
+label.checkbox {
+  padding: 1.1rem 0.85rem;
+  display: block;
+}
+
+.oc-input:focus,
+input.pure-input-1-3.oc-pure-input:focus,
+input.pure-input-2-3.oc-pure-input:focus,
+.kc-dropdown:hover > a {
+  outline: 0;
+  border: 1px solid #ee3e6e;
+  -webkit-box-shadow: 0 0 8px #ee3e6e;
+  -moz-box-shadow: 0 0 8px #ee3e6e;
+  box-shadow: 0 0 8px #ee3e6e;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-top: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+
+div.socialmeediaLogin ul {
+  padding: 0;
+}
+
+div.socialmeediaLogin ul li {
+  list-style: none;
+  margin: 0 0 0.4rem;
+}
+
+div.socialmeediaLogin ul li a {
+  width: 100%;
+}
+
+div.totpImage > * {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+}
+
+div.totpImage span {
+  font-family: courier, ​monospace;
+  font-size: 16px;
+}
+
+ul.grants {
+  border: 1px solid #9d9d9d;
+  padding: 0.8rem 1.6rem 0.6rem;
+}
+
+ul.grants li {
+  margin-bottom: 0.2rem;
+}

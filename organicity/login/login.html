@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>OrganiCity Accounts</title>
+    <meta name="description" content="OrganiCity is a new EU project with € 7.2m in funding that puts people at the centre of the development of future cities. The project brings together 3 leading smart cities and a total of 15 consortium members with great diversity in skills and experience.">
+    <meta name="keywords" content="OrganiCity,EU,future,city,cities,innovation,innovative,co-creating,user,account,signin,login,register,signup,email">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/favicon.ico.png">
+    <link rel="apple-touch-icon-precomposed" href="resources/apple-touch-icon-precomposed.png">
+
+      <link rel="stylesheet" id="pure-css" href="resources/pure-min.css" type="text/css" media="all">
+<link rel="stylesheet" id="pure-grid-css" href="resources/grids-responsive-min.css" type="text/css" media="all">
+
+    <link rel="stylesheet" href="resources/oc.css" type="text/css">
+    <link rel="stylesheet" href="https://accounts.organicity.eu/resources/1.9.1.final/admin/keycloak/lib/zocial/zocial.css" type="text/css">
+
+
+  </head>
+
+<body>
+  <header role="banner" class=" cityheader">
+
+    <div class="header-bar">
+      <a href="http://organicity.eu/" title="Organicity - link to homepage">
+        <span class="offscreen">OrganiCity</span>
+        <img class="logo" src="resources/organicity_logo.png" alt="Organicity logo">
+        </a>
+    </div>
+  </header>
+
+<main role="main">
+    <div class="section section--page">
+  <h2>Sign in to Organicity</h2>
+
+
+
+  <div class="pure-g">
+
+
+    <div class="pure-u-2-3">
+      <div class="loginForm">
+
+
+      <div id="kc-feedback-placeholder" class="">
+        <div id="kc-feedback-placeholder-wrapper"></div>
+      </div>
+
+
+      <form id="kc-form-login" class="" action="https://accounts.organicity.eu/realms/organicity/login-actions/authenticate?code=ZpmAtM3oUhv8XpojZhEkRKmObIlwaIbAbZvJwi_VFfA.7f60c5e3-54e9-4dfe-b32f-5be1ebb712f0&execution=7c8382a4-624c-4911-9135-242e1f2b0af1" method="post">
+
+        <div class="loginInput">
+            <input id="username" class="oc-input full" name="username" value="" type="text" placeholder="Benutzername oder E-Mail" />
+        </div>
+
+        <!-- <div class="pure-g"> -->
+        <!--   <div class="pure-u-2-5"> -->
+        <!--     <label for="username" class=""><p>Benutzername oder E-Mail</p></label> -->
+        <!--   </div> -->
+
+        <!--   <div class="pure-u-3-5"> -->
+        <!--     <input id="username" class="oc-input full" name="username" value="" type="text" /> -->
+        <!--   </div> -->
+        <!-- </div> -->
+
+        <div class="loginInput">
+            <input id="password" class="oc-input full" name="password" type="password" placeholder="Passwort" />
+        </div>
+
+        <!-- <div class="pure-g"> -->
+        <!--   <div class="pure-u-2-5"> -->
+        <!--     <label for="password" class=""><p>Passwort</p></label> -->
+        <!--   </div> -->
+
+        <!--   <div class="pure-u-3-5"> -->
+        <!--     <input id="password" class="oc-input full" name="password" type="password" /> -->
+        <!--   </div> -->
+        <!-- </div> -->
+
+        <div class="pure-g">
+          <div class="pure-u-3-5">
+              <label>
+                <input id="rememberMe" name="rememberMe" type="checkbox" tabindex="3"> <p>Angemeldet bleiben</p>
+              </label>
+        </div>
+        <div class="pure-u-2-5">
+
+          <div id="kc-form-buttons" class="">
+              <input class="submit button--full button--external" name="login" id="kc-login" type="submit" value="Anmelden"/>
+          </div>
+
+        </div>
+      </div>
+    </form>
+
+
+
+
+
+            <div class="">
+              <p><a class="actionable" href="/realms/organicity/login-actions/reset-credentials?code=ZpmAtM3oUhv8XpojZhEkRKmObIlwaIbAbZvJwi_VFfA.7f60c5e3-54e9-4dfe-b32f-5be1ebb712f0">Passwort vergessen?</a></p>
+            </div>
+
+        <div id="kc-registration">
+          <p>Neuer Benutzer? <a  class="actionable" href="/realms/organicity/login-actions/registration?code=ZpmAtM3oUhv8XpojZhEkRKmObIlwaIbAbZvJwi_VFfA.7f60c5e3-54e9-4dfe-b32f-5be1ebb712f0">Registrieren</a></p>
+        </div>
+
+
+
+
+      </div>
+    </div>
+    <div class="pure-u-1-3">
+      <div class="loginButtons">
+
+      <!-- <div id="kc-locale" class=""> -->
+      <!--   <div class="kc-dropdown" id="kc-locale-dropdown"> -->
+      <!--     <a href="#" id="kc-current-locale-link">Deutsch</a> -->
+      <!--     <ul> -->
+      <!--       <li class="kc-dropdown-item"><a href="/realms/organicity/login-actions/authenticate?code=ZpmAtM3oUhv8XpojZhEkRKmObIlwaIbAbZvJwi_VFfA.7f60c5e3-54e9-4dfe-b32f-5be1ebb712f0&kc_locale=de">Deutsch</a></li> -->
+      <!--       <li class="kc-dropdown-item"><a href="/realms/organicity/login-actions/authenticate?code=ZpmAtM3oUhv8XpojZhEkRKmObIlwaIbAbZvJwi_VFfA.7f60c5e3-54e9-4dfe-b32f-5be1ebb712f0&kc_locale=pt-BR">Português (Brasil)</a></li> -->
+      <!--       <li class="kc-dropdown-item"><a href="/realms/organicity/login-actions/authenticate?code=ZpmAtM3oUhv8XpojZhEkRKmObIlwaIbAbZvJwi_VFfA.7f60c5e3-54e9-4dfe-b32f-5be1ebb712f0&kc_locale=en">English</a></li> -->
+      <!--       <li class="kc-dropdown-item"><a href="/realms/organicity/login-actions/authenticate?code=ZpmAtM3oUhv8XpojZhEkRKmObIlwaIbAbZvJwi_VFfA.7f60c5e3-54e9-4dfe-b32f-5be1ebb712f0&kc_locale=it">Italian</a></li> -->
+      <!--       <li class="kc-dropdown-item"><a href="/realms/organicity/login-actions/authenticate?code=ZpmAtM3oUhv8XpojZhEkRKmObIlwaIbAbZvJwi_VFfA.7f60c5e3-54e9-4dfe-b32f-5be1ebb712f0&kc_locale=fr">Français</a></li> -->
+      <!--       <li class="kc-dropdown-item"><a href="/realms/organicity/login-actions/authenticate?code=ZpmAtM3oUhv8XpojZhEkRKmObIlwaIbAbZvJwi_VFfA.7f60c5e3-54e9-4dfe-b32f-5be1ebb712f0&kc_locale=ca">Català</a></li> -->
+      <!--       <li class="kc-dropdown-item"><a href="/realms/organicity/login-actions/authenticate?code=ZpmAtM3oUhv8XpojZhEkRKmObIlwaIbAbZvJwi_VFfA.7f60c5e3-54e9-4dfe-b32f-5be1ebb712f0&kc_locale=es">Español</a></li> -->
+      <!--     </ul> -->
+      <!--   </div> -->
+      <!-- </div> -->
+
+
+<p>Sign in via:
+
+      <div id="kc-info" class="">
+        <div id="kc-social-providers">
+          <ul>
+            <li><a href="/realms/organicity/broker/facebook/login?code=ZpmAtM3oUhv8XpojZhEkRKmObIlwaIbAbZvJwi_VFfA.7f60c5e3-54e9-4dfe-b32f-5be1ebb712f0" id="zocial-facebook" class="zocial facebook"> <span class="text">facebook</span></a></li>
+            <li><a href="/realms/organicity/broker/github/login?code=ZpmAtM3oUhv8XpojZhEkRKmObIlwaIbAbZvJwi_VFfA.7f60c5e3-54e9-4dfe-b32f-5be1ebb712f0" id="zocial-github" class="zocial github"> <span class="text">github</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+
+</p>
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+  </main>
+
+  <footer>
+    <div class="section section--footer">
+      <div class="pure-g">
+        <div class="pure-u-1-4"></div>
+        <div class="pure-u-1-1 pure-u-md-1-1 pure-u-lg-1-2">
+
+          <h3>Follow us</h3>
+
+          <div class="pure-g socialMedia">
+
+
+            <div class="pure-u-1-3 pure-u-md-1-6 socialMediaIcon">
+              <a href="https://www.facebook.com/OrganiCities/"><i class="icon-facebook-squared"></i></a>
+            </div>
+
+
+            <div class="pure-u-1-3 pure-u-md-1-6 socialMediaIcon">
+              <a href="http://www.twitter.com/organicity_eu"><i class="icon-twitter"></i></a>
+            </div>
+
+</div>
+                <hr>
+                <div class="logos">
+                    <img class="" src="welcome-content/logo_eu.png" alt="European Commission">
+                </div>
+
+                <p class="eu-disclosure">
+                    This project has received funding from the European
+Union's Horizon 2020 research and innovation program under the grant
+agreement No. 645198                </p>
+            </div>
+            <div class="pure-u-1-4"></div>
+        </div>
+    </div>
+    <div class="section section--copyright">
+        <div class="pure-g">
+            <div class="pure-u-1-1">&copy; Organicity 2016</div>
+        </div>
+    </div>
+</footer>
+
+
+
+  </body>
+</html>
+
